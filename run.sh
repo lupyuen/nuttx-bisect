@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+## Run Git Bisect on NuttX
 
 set -e  ## Exit when any command fails
 set -x  ## Echo commands
@@ -25,3 +26,6 @@ git bisect good 656883fec5561ca91502a26bf018473ca0229aa4
 
 ## Run the Git Bisect automatically
 git bisect run $script_dir/my-test-script.sh
+
+## Visualise the Git Bisect
+git bisect log

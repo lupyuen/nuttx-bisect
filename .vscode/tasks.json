@@ -7,7 +7,7 @@
             "label": "Build",
             "type": "shell",
 
-            "command": "set -e ; set -x ; $PWD/run.sh",
+            "command": "set -e ; set -x ; sudo $PWD/run2.sh",
 
             "problemMatcher": "$rustc",
             "group": {

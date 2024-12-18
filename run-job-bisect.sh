@@ -2,12 +2,14 @@
 ## Run a NuttX CI Job with Docker
 ## Read the article: https://lupyuen.codeberg.page/articles/ci2.html
 
-echo "Now running https://github.com/lupyuen/nuttx-bisect/blob/main/run-job.sh $1 $2 $3"
-echo "Called by https://github.com/lupyuen/nuttx-bisect/blob/main/run.sh"
+echo "Now running https://github.com/lupyuen/nuttx-bisect/blob/main/run-job-bisect.sh $1 $2 $3"
+echo "Called by https://github.com/lupyuen/nuttx-bisect/blob/main/start-job-bisect.sh"
 date -u
+
+set -e  ## Exit when any command fails
 set -x  ## Echo commands
 
-# First Parameter is CI Job, like "arm-01"
+# First Parameter is CI Job, like "risc-v-05"
 job=$1
 if [[ "$job" == "" ]]; then
   echo "ERROR: Job Parameter is missing (e.g. risc-v-05)"

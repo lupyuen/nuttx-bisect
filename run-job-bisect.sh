@@ -64,4 +64,10 @@ set -e  ## Exit when any command fails
 set +x ; echo res=$res ; set -x
 
 ## Result the result to the caller
-exit $res
+if [[ "$res" == "0" ]] ; then
+  set +x ; echo "**** Return OK" ; set -x
+  exit 0
+else
+  set +x ; echo "**** Return Error" ; set -x
+  exit 1
+fi

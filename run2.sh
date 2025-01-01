@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 ## Run Git Bisect on NuttX
+## Must be run as `sudo`! (Because of Docker)
 
 set -e  ## Exit when any command fails
 set -x  ## Echo commands

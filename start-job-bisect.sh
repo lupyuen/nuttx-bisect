@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 ## Test a NuttX Commit for Git Bisect
+## Must be run as `sudo`! (Because of Docker)
 
 echo ; echo ; echo "--------------------------------------------------------------------------------"
 echo "Testing Commit $(git rev-parse HEAD)"

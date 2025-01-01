@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 ## Run a NuttX CI Job with Docker
+## Must be run as `sudo`! (Because of Docker)
 ## Read the article: https://lupyuen.codeberg.page/articles/ci2.html
 
 echo "Now running https://github.com/lupyuen/nuttx-bisect/blob/main/run-job-bisect.sh $1 $2 $3"

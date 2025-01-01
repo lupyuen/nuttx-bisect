@@ -25,7 +25,11 @@ git bisect bad HEAD
 git bisect good 656883fec5561ca91502a26bf018473ca0229aa4
 
 ## Run the Git Bisect automatically
+## Bisect with our Simulated Test Script
 git bisect run $script_dir/my-test-script.sh
+
+## Or with our Actual Test Script
+## git bisect run $script_dir/start-job-bisect.sh
 
 ## Visualise the Git Bisect
 git bisect log

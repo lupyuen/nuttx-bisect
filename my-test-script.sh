@@ -24,7 +24,7 @@ git bisect log
 
 ## Randomly simulate OK or Error
 random_0_or_1=$(( $RANDOM % 2 ))
-if (( "$random_0_or_1" == "0" )); then
+if [[ "$random_0_or_1" == "0" ]]; then
   set +x ; echo "**** Simulate OK" ; set -x
   exit 0
 else
